@@ -15,13 +15,13 @@
 }
 
 html {
+    zoom: 0.9;
     scroll-padding-top: 20rem;
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
 
 body {
-    zoom: 0.9;
     background: url(img/background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,10 +132,12 @@ label {
 }
 
 #text {
+    field-sizing: content;
     background: var(--Blanco2);
     scrollbar-width: none;
     color: #0c0c0cec;
-    height: 12.6rem;
+    min-height: 12.6rem; 
+    height: auto;
     width: 96.28%;
     border: none;
     resize: none;
@@ -172,6 +174,7 @@ label {
     padding: 0;
     margin: 0;
     gap: 2rem;
+    align-items: flex-end;
 }
 
 .button {
@@ -180,7 +183,6 @@ label {
     border: 0px solid var(--Gris);
     border-radius: 0.8rem;
     color: var(--Blanco2);
-    margin-top: 11rem;
     font-size: 3.6rem;
     height: 4.3rem;
     width: 4.5rem;
@@ -200,6 +202,4 @@ label {
 .containButton:has(#text:focus) button{
     margin-top: 12rem;
 }
-
-
 
