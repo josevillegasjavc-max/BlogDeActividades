@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    background: url(/resource/background.jpeg) no-repeat fixed center / cover;
+    background: url(../resource/background.jpeg) no-repeat fixed center / cover;
     color: var(--Negro);
     margin: 0;
 }
