@@ -1,0 +1,2 @@
+# BlogDeActividades
+Blog de actividades
