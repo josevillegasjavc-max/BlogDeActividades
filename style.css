@@ -52,6 +52,7 @@ h1 {
     font-weight: 700;
     font-style: bold;
     display:inline-flex;
+    user-select: none;
     font-size: 4rem;
     cursor: pointer;
     margin: 1rem;
@@ -80,6 +81,16 @@ main {
     margin-top: 18rem;
 }
 
+h2 {
+    user-select: none;
+    font-size: 3.2rem;
+    text-decoration: underline;
+    margin: 1rem;
+    background: -webkit-repeating-linear-gradient(var(--Naranja), var(--Rojo));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .insertInfo {
     box-shadow: 0 0.1rem 1.5rem var(--Gris);
     background: var(--Blanco2);
@@ -93,6 +104,7 @@ label {
     background-color: var(--Blanco2);
     color: var(--Naranja);
     position: relative;
+    user-select: none;
     font-size: 2.1rem;
     font-weight: 800;
     top: 1.2rem;
@@ -117,8 +129,9 @@ label {
     margin-bottom: 2.6rem;
     color: #2b2b2bec;
     font-weight: bold;
+    font-size: 2.1rem;
     height: 3.7rem;
-    width: 50%;
+    width: 60%;
     transition: all 0.2s ease-in-out;
     z-index: 1;
 }
@@ -132,10 +145,11 @@ label {
 }
 
 #text {
+    font-weight: bold;
     field-sizing: content;
     background: var(--Blanco2);
     scrollbar-width: none;
-    color: #0c0c0cec;
+    color: #2b2b2bec;
     min-height: 12.6rem; 
     height: auto;
     width: 96.28%;
