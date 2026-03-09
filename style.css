@@ -22,8 +22,10 @@ html {
 
 body {
     zoom: 0.9;
-    background: url(img/background.jpeg), no-repeat;
+    background: url(img/background.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     color: var(--Negro);
     margin: 0;
 }
