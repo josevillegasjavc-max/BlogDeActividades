@@ -28,7 +28,6 @@ label {
     border-radius: 0.8rem;
     color: #2b2b2bec;
     font-weight: bold;
-    font-size: 1.8em; 
     display: flex;
     flex-direction: column;
 }
@@ -88,11 +87,12 @@ label {
 
 .button {
     background: -webkit-repeating-linear-gradient( var(--Rojo), var(--Naranja),  var(--Rojo));
-    box-shadow: 0 0.1rem 1.5rem #474747ad;
-    border: 0px solid var(--Gris);
-    border-radius: 0.8rem;
+    box-shadow: 0rem 0.1rem 1.5rem #474747ad;
     color: var(--Blanco2);
+    border-radius: 0.8rem;
     font-size: 3.6rem;
+    cursor: pointer;
+    border: none;
     height: 4.3rem;
     width: 4.5rem;
     transition: all 0.2s ease-out;
@@ -105,6 +105,6 @@ label {
 
 .button:active {
     background: -webkit-repeating-linear-gradient( var(--Rojo2), var(--Rojo),  var(--Rojo2));
-    scale: 0.8;
+    scale: 0.9;
     filter: saturate(1);
 }
