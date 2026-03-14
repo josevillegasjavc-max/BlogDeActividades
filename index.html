@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista De Actividades</title>
-    <link rel="stylesheet" href="style/global.css">
+    <link rel="Icon" href="./resource/logo.png" type="image/svg" />
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
     <header>
@@ -12,19 +13,17 @@
     </header>
     <main>
         <div class="divMain">
-            <section id="inicio" class="insertInfo">
-                <h2>INGRESAR INFORMACION</h2>
+            <form id="inicio" class="insertInfo">
+                <h2><a href="#title">INGRESAR INFORMACION</a></h2>
                 <label id="labelTi" for="title">Titulo</label>
-                <input class="input" id="title" placeholder=" " type="text">
+                <input class="input" id="title" placeholder="" type="text" required>
 
-                <label id="labelTe" for="text">Actividad</label>
+                <label id="labelTe" for="description">Actividad</label>
                 <div class="containButton">
-                    <div id="containText" class="input">
-                        <textarea name="text" id="text"></textarea>
-                    </div>
-                    <button class="button">+</button>
+                    <textarea name="description" id="description" class="input" required></textarea>
+                    <button type="submit" class="button">+</button>
                 </div>
-            </section>
+            </form>
         </div>
     </main>
 </body>

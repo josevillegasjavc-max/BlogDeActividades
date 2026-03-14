@@ -11,7 +11,7 @@
 }
 
 * {
-   max-width: 100%;;
+    max-width: 100%;;
 }
 
 html {
@@ -25,19 +25,6 @@ body {
     background: url(../resource/background.jpeg) no-repeat fixed center / cover;
     color: var(--Negro);
     margin: 0;
-}
-
-header { 
-    box-shadow: 0rem 0.1rem 1.5rem var(--Gris);
-    border-radius: 0rem 0rem 1rem 1rem;
-    background: var(--Blanco2);
-    text-align: center;
-    position: fixed; 
-    padding: 0.5rem; 
-    height: 6rem;
-    width: 100%;
-    top: 0;   
-    z-index: 4;
 }
 
 a {
@@ -79,6 +66,7 @@ main {
 }
 
 h2 {
+    cursor: pointer;
     user-select: none;
     font-size: 3.2rem;
     text-decoration: underline;
@@ -86,130 +74,4 @@ h2 {
     background: -webkit-repeating-linear-gradient(var(--Naranja), var(--Rojo));
     -webkit-text-fill-color: transparent;
     background-clip: text;
-}
-
-.insertInfo {
-    box-shadow: 0 0.1rem 1.5rem var(--Gris);
-    background: var(--Blanco2);
-    border-radius: 3.5rem;
-    padding: 3rem;
-    margin: 2rem;
-}
-
-label { 
-    padding: 0rem 0.4rem 0rem 0.4rem;
-    background-color: var(--Blanco2);
-    color: var(--Naranja);
-    position: relative;
-    user-select: none;
-    font-size: 2.1rem;
-    font-weight: 800;
-    top: 1.2rem;
-    margin: 0;
-    margin-left: 1rem;
-    transition: all 0.3s ease-in-out;
-    z-index: 2;
-}
-
-.input {
-    box-shadow: 0 0.1rem 1.5rem #a7a6a6ad;
-    border: 4px solid var(--Naranja);
-    background: var(--Blanco2);
-    border-radius: 0.8rem;
-    font-size: 1.8em; 
-    display: flex;
-    flex-direction: column;
-}
-
-#title {
-    padding: 0.3rem 1rem 0.3rem 1rem;
-    margin-bottom: 2.6rem;
-    color: #2b2b2bec;
-    font-weight: bold;
-    font-size: 2.1rem;
-    height: 3.7rem;
-    width: 60%;
-    transition: all 0.2s ease-in-out;
-    z-index: 1;
-}
-
-#containText {
-    padding: 1.2rem 0.6rem 0.2rem 0.6rem;
-    text-align: center;
-    width: 86%;
-    transition: all 0.2s ease-in-out;
-    z-index: 1;
-}
-
-#text {
-    font-weight: bold;
-    field-sizing: content;
-    background: var(--Blanco2);
-    scrollbar-width: none;
-    color: #2b2b2bec;
-    min-height: 12.6rem; 
-    height: auto;
-    width: 96.28%;
-    border: none;
-    resize: none;
-    font-size: 1.9rem; 
-}
-
-#title:focus {
-    padding: 0.8rem 1.4rem 0.8rem 1.4rem;
-    border: 4px solid var(--Rojo);
-    outline: none;  
-    filter: saturate(1);
-}   
-
-#containText:has(#text:focus){
-    padding: 1.6rem 0.8rem 1.2rem 0.8rem;
-    border: 4px solid var(--Rojo);
-    filter: saturate(1);
-}
-
-#text:focus {
-    outline: none;  
-}
-
-.insertInfo:has(#title:focus) #labelTi{
-    color: var(--Rojo);
-}
-
-.insertInfo:has(#text:focus) #labelTe{
-    color: var(--Rojo);
-}
-
-.containButton {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 2rem;
-    align-items: flex-end;
-}
-
-.button {
-    background: -webkit-repeating-linear-gradient( var(--Rojo), var(--Naranja),  var(--Rojo));
-    box-shadow: 0 0.1rem 1.5rem #474747ad;
-    border: 0px solid var(--Gris);
-    border-radius: 0.8rem;
-    color: var(--Blanco2);
-    font-size: 3.6rem;
-    height: 4.3rem;
-    width: 4.5rem;
-    transition: all 0.2s ease-out;
-}
-
-.button:hover {
-    filter: saturate(1.2);
-    box-shadow: 0 0.1rem 1.5rem #474747ad;
-}
-
-.button:active {
-    background: -webkit-repeating-linear-gradient( var(--Rojo2), var(--Rojo),  var(--Rojo2));
-    filter: saturate(1);
-}
-
-.containButton:has(#text:focus) button{
-    margin-top: 12rem;
 }
