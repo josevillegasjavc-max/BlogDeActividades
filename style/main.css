@@ -1,3 +1,3 @@
-@import "/style/global.css";
-@import "/style/header.css";
-@import "/style/form.css";
+@import url(/style/header.css);
+@import url(/style/global.css);
+@import url(/style/form.css);
