@@ -1,3 +1,22 @@
+#titleSection {
+    box-shadow: 0 0.1rem 1.5rem var(--Gris);
+    background: var(--Blanco2);
+    border-radius: 3.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 4rem;
+    margin-top: 5rem;
+}
+
+#spantitle {
+    letter-spacing: 0.3rem;
+    font-size: 3.2rem;
+    cursor: pointer;
+    background: -webkit-repeating-linear-gradient(var(--Rojo), var(--Naranja));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .cardsActivity {
     box-shadow: 0 0.1rem 1.5rem var(--Gris);
     background: var(--Blanco2);
