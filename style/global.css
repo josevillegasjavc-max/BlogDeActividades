@@ -31,28 +31,6 @@ a {
     text-decoration: none;
 }
 
-h1 { 
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-style: bold;
-    display:inline-flex;
-    user-select: none;
-    font-size: 4rem;
-    cursor: pointer;
-    margin: 1rem;
-    background: -webkit-repeating-linear-gradient(var(--Naranja), var(--Rojo));
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-text-stroke-width: 1px ;
-    -webkit-text-stroke-color: #8f5454;
-    transition: all 0.3s ease-in-out;
-}
-
-h1:hover {
-    text-shadow: 0.2rem 0.4rem 0.8rem var(--Naranja);
-    transform: translateY(-0.5rem);
-}
-
 main {
     width: 100%;
     font-family: "Ubuntu", sans-serif;
@@ -62,16 +40,4 @@ main {
     max-width: 80rem; 
     padding: 0 2rem;
     margin: auto;
-    margin-top: 18rem;
-}
-
-h2 {
-    cursor: pointer;
-    user-select: none;
-    font-size: 3.2rem;
-    text-decoration: underline;
-    margin: 1rem;
-    background: -webkit-repeating-linear-gradient(var(--Naranja), var(--Rojo));
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }

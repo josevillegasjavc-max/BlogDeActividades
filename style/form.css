@@ -4,6 +4,18 @@
     border-radius: 3.5rem;
     padding: 3rem;
     margin: 2rem;
+    margin-top: 13rem;
+}
+
+.titleForm {
+    cursor: pointer;
+    user-select: none;
+    font-size: 3.2rem;
+    text-decoration: underline;
+    margin: 1rem;
+    background: -webkit-repeating-linear-gradient(var(--Naranja), var(--Rojo));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 label { 
@@ -29,7 +41,8 @@ label {
     color: #2b2b2bec;
     font-weight: bold;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    z-index: 1;
 }
 
 #title {
@@ -39,7 +52,6 @@ label {
     height: 3.7rem;
     width: 60%;
     transition: all 0.2s ease-in-out;
-    z-index: 1;
 }
 
 #title:focus {
@@ -61,7 +73,7 @@ label {
     align-items: flex-end;
 }
 
-#description {
+#inputDescription {
     padding: 1rem 0.7rem 0.2rem 0.8rem;
     field-sizing: content;
     scrollbar-width: none;
@@ -71,17 +83,16 @@ label {
     resize: none;
     font-size: 1.9rem; 
     transition: all 0.2s ease-in-out;
-    z-index: 1;
 }
 
-#description:focus{
+#inputDescription:focus{
     padding: 1.4rem 1rem 1.4rem 0.8rem;
     border: 4px solid var(--Rojo);
     filter: saturate(1);
     outline: none;  
 }
 
-.insertInfo:has(#description:focus) #labelTe{
+.insertInfo:has(#inputDescription:focus) #labelTe{
     color: var(--Rojo);
 }
 
