@@ -1,16 +1,21 @@
 .insertInfo {
+    position: fixed;
     box-shadow: 0 0.1rem 1.5rem var(--Gris);
     background: var(--Blanco2);
     border-radius: 3.5rem;
     padding: 3rem;
     margin: 2rem;
-    margin-top: 13rem;
+    margin-top: 12rem;
+    height: 34rem;
+    min-width: 60rem;
+    margin-right: 76.7rem;
 }
 
 .titleForm {
     cursor: pointer;
     user-select: none;
     font-size: 3.2rem;
+    letter-spacing: 0.2rem;
     text-decoration: underline;
     margin: 1rem;
     background: -webkit-repeating-linear-gradient(var(--Naranja), var(--Rojo));
@@ -102,6 +107,7 @@ label {
     color: var(--Blanco2);
     border-radius: 0.8rem;
     font-size: 3.6rem;
+    user-select: none;
     cursor: pointer;
     border: none;
     height: 4.3rem;

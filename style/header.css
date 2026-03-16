@@ -2,7 +2,7 @@ header {
     box-shadow: 0rem 0.1rem 1.5rem var(--Gris);
     border-radius: 0rem 0rem 1rem 1rem;
     background: var(--Blanco2);
-    text-align: center;
+    text-align: start;
     position: fixed; 
     height: 6rem;
     width: 100%;
@@ -16,10 +16,10 @@ h1 {
     font-style: bold;
     display: inline-flex;
     user-select: none;
-    font-size: 4rem;
+    font-size: 3.8rem;
     cursor: pointer;
-    padding-top: 1rem;
     margin: 0;
+    margin-top: 0.72rem;
     background: -webkit-repeating-linear-gradient(var(--Naranja), var(--Rojo));
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -28,20 +28,23 @@ h1 {
     transition: all 0.3s ease-in-out;
 }
 
-h1:hover {
-    text-shadow: 0.2rem 0.4rem 0.8rem rgba(255, 128, 43, 0.815);
-    transform: translateY(-0.5rem);
+header a {
+    justify-content: start;
+    display: inline-flex;
+    margin-top: 0.2rem;
+    margin-left: 12.5rem;
+    transition: all 0.3s 0.1s ease-in-out;
 }
 
-header div {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+header a:hover {
+    filter: drop-shadow(0.2rem 0.4rem 0.4rem rgba(255, 128, 43, 0.815));
+    transform: translateY(-0.3rem);
 }
 
 .logo {
-    margin: 0;
-    width: 6rem;
+    user-select: none;
+    cursor: pointer;
+    width: 5.5rem;
     height: auto;
+    margin: 0;
 }

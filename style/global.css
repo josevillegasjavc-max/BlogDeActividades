@@ -22,6 +22,10 @@ html {
     font-size: 62.5%;
 }
 
+html::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background: url(../resource/background.jpeg) no-repeat fixed center / cover;
     color: var(--Negro);
@@ -38,7 +42,10 @@ main {
 }
 
 .divMain {
-    max-width: 80rem; 
-    padding: 0 2rem;
+    justify-content: end;
+    min-height: 62.8rem;
+    max-width: 156rem; 
+    display: flex;
     margin: auto;
+    margin-top: 6.1rem;
 }

@@ -9,10 +9,10 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="./resource/logo.png" alt="logo" class="logo">
-            <h1><a href="#inicio">LISTA DE ACTIVIDADES</a></h1>
-        </div>
+            <a href="#inicio">
+                <img src="./resource/logo.png" alt="logo" class="logo">
+                <h1>LISTA DE ACTIVIDADES</h1>
+            </a>
     </header>
     <main>
         <div class="divMain">
@@ -24,10 +24,11 @@
                 <label id="labelTe" for="inputDescription">Actividad</label>
                 <div class="containButton">
                     <textarea name="inputDescription" id="inputDescription" class="input" required></textarea>
-                    <button type="submit" class="button" onclick="mostrarInfo(event)">+</button>
+                    <button type="submit" class="button" onclick="mostrarInfo(event)" title="Agregar">+</button>
                 </div>
             </form>
-            <section> 
+
+            <section id="containtActivity"> 
                 <div id="containTitle"></div>
                 <div id="datos"> </div>
             </section>

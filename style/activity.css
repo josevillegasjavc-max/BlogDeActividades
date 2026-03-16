@@ -1,11 +1,18 @@
+#containtActivity {
+    border: 2.5px solid #969191;
+    background: #e2e2e2;
+    min-width: 69rem;
+    margin: 0;
+}
+
 #titleSection {
     box-shadow: 0 0.1rem 1.5rem var(--Gris);
     background: var(--Blanco2);
     border-radius: 3.5rem;
     text-align: center;
-    padding: 1.5rem;
-    margin: 3.5rem;
-    margin-top: 5rem;
+    padding: 1rem;
+    margin: 1.7rem 3.5rem 1.6rem 3.5rem;
+    min-width: 60rem;
 }
 
 #spantitle {
@@ -27,7 +34,7 @@
     background: var(--Blanco2);
     border-radius: 3.5rem;
     padding: 3rem;
-    padding-bottom: 2.4rem;
+    padding-bottom: 1.9rem;
     margin: 2rem;
 }
 
