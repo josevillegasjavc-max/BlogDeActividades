@@ -4,7 +4,7 @@
     border-radius: 3.5rem;
     text-align: center;
     padding: 1.5rem;
-    margin: 4rem;
+    margin: 3.5rem;
     margin-top: 5rem;
 }
 
@@ -67,9 +67,21 @@
     color: var(--Blanco2);
     border-radius: 40%;
     font-size: 3rem;
+    padding: 0.4rem;
     cursor: pointer;
     border: none;
     height: 3.8rem;
     min-width: 4rem;
     transition: all 0.2s ease-out;
+}
+
+.buttonX:hover {
+    filter: saturate(1.4);
+    box-shadow: 0 0.1rem 1.5rem #2e2e2ead;
+}
+
+.buttonX:active {
+    background: -webkit-repeating-linear-gradient( var(--Rojo2), var(--Rojo),  var(--Rojo2));
+    scale: 0.7;
+    filter: saturate(1);
 }
