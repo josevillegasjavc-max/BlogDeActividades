@@ -13,29 +13,29 @@ function crearPlantilla(titulo, actividad) {
 let iniciado = false;
 
 function mostrarInfo() {
-event.preventDefault();
+    event.preventDefault();
 
-let inputTitle = document.getElementById("inputTitle");
-let inputDescription = document.getElementById("inputDescription");
-let contenedor = document.getElementById("datos");
+    let inputTitle = document.getElementById("inputTitle");
+    let inputDescription = document.getElementById("inputDescription");
+    let contenedor = document.getElementById("datos");
 
 
-if (inputTitle.value === "" || inputDescription.value === "") {
-    alert("Por favor, llena todos los campos");
-    return;
-}
+    if (inputTitle.value === "" || inputDescription.value === "") {
+        alert("Por favor, llena todos los campos");
+        return;
+    }
 
-if (iniciado == false) {
-    let subtitulo = document.getElementById("containTitle");
-    subtitulo.innerHTML = `
-    <h2 id="titleSection"> 
-        <span id="spantitle"> LISTA DE ACTIVIDADES </span> 
-    </h2>
-    `;
-}
+    if (iniciado == false) {
+        let subtitulo = document.getElementById("containTitle");
+        subtitulo.innerHTML = `
+        <h2 id="titleSection"> 
+            <span id="spantitle"> LISTA DE ACTIVIDADES </span> 
+        </h2>
+        `;
+    }
 
-contenedor.insertAdjacentHTML('afterbegin', crearPlantilla(inputTitle.value, inputDescription.value));
+    contenedor.insertAdjacentHTML('afterbegin', crearPlantilla(inputTitle.value, inputDescription.value));
 
-inputTitle.value = "";
-inputDescription.value = "";
+    inputTitle.value = "";
+    inputDescription.value = "";
 }
