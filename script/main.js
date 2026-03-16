@@ -1,7 +1,10 @@
 function crearPlantilla(titulo, actividad) {
     return `
     <article class="cardsActivity">
-        <h3 class="titleActivity" >${titulo}</h3>
+        <div>
+            <h3 class="titleActivity" >${titulo}</h3>
+            <button type="submit" class="buttonX">X</button>
+        </div>
         <p class="description" >${actividad}</p>
     </article>
     `;

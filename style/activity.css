@@ -27,10 +27,12 @@
     background: var(--Blanco2);
     border-radius: 3.5rem;
     padding: 3rem;
+    padding-bottom: 2.4rem;
     margin: 2rem;
 }
 
 .titleActivity {
+    margin: 0;
     display: inline;
     cursor: pointer;
     font-size: 3.2rem;
@@ -52,4 +54,22 @@
     height: auto;
     font-size: 1.9rem; 
     transition: all 0.2s ease-in-out;
+}
+
+.cardsActivity div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonX {
+    background: -webkit-repeating-linear-gradient( var(--Rojo), var(--Rojo2),  var(--Rojo));
+    box-shadow: 0rem 0.1rem 1.5rem #474747ad;
+    color: var(--Blanco2);
+    border-radius: 40%;
+    font-size: 3rem;
+    cursor: pointer;
+    border: none;
+    height: 3.8rem;
+    min-width: 4rem;
+    transition: all 0.2s ease-out;
 }
