@@ -13,7 +13,7 @@ function mostrarInfo() {
 event.preventDefault();
 
 if (iniciado == false) {
-    let subtitulo = document.getElementById("contTitleSection");
+    let subtitulo = document.getElementById("containTitle");
     subtitulo.innerHTML = `
     <h2 id="titleSection"> 
         <span id="spantitle"> LISTA DE ACTIVIDADES </span> 
@@ -21,13 +21,13 @@ if (iniciado == false) {
     `;
 }
 
-let inputTitle = document.getElementById("title");
+let inputTitle = document.getElementById("inputTitle");
 let inputDescription = document.getElementById("inputDescription");
 let contenedor = document.getElementById("datos");
 
 
 if (inputTitle.value === "" || inputDescription.value === "") {
-    alert("Por favor, llena todos losr campos");
+    alert("Por favor, llena todos los campos");
     return;
 }
 

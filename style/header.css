@@ -29,6 +29,6 @@ h1 {
 }
 
 h1:hover {
-    text-shadow: 0.2rem 0.4rem 0.8rem var(--Naranja);
+    text-shadow: 0.2rem 0.4rem 0.8rem rgba(255, 128, 43, 0.815);
     transform: translateY(-0.5rem);
 }
