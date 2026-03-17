@@ -1,8 +1,8 @@
 #containtActivity {
     border: 2.5px solid #969191;
     background: #e2e2e2;
-    min-width: 69rem;
     margin: 0;
+    width: 70rem;
 }
 
 #titleSection {

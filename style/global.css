@@ -43,7 +43,7 @@ main {
 
 .divMain {
     justify-content: end;
-    min-height: 62.8rem;
+    min-height: 90rem;
     max-width: 156rem; 
     display: flex;
     margin: auto;
