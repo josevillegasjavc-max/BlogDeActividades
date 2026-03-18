@@ -128,7 +128,7 @@ label {
     cursor: pointer;
     border: none;
     height: 4.3rem;
-    width: 4.5rem;
+    min-width: 4.5rem;
     transition: all 0.2s ease-out;
 }
 
