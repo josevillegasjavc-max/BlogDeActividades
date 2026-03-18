@@ -14,6 +14,8 @@
 }
 
 .containLogo {
+    margin-top: 0.6rem;
+    margin-bottom: 0.3rem;
     margin-left: 6.5%;
     display: inline-flex;
     transition: all 0.3s 0.1s ease-in-out;
@@ -25,7 +27,6 @@
     font-size: 3.8rem;
     cursor: pointer;
     margin: 0;
-    margin-top: 0.72rem;
 
     background: 
         -webkit-repeating-linear-gradient(var(--Naranja), var(--Rojo));
@@ -40,6 +41,5 @@
     width: 4rem;
     height: 4rem;
     margin: 0;
-    margin-top: 1rem;
     margin-right: 0.5rem;
 }
