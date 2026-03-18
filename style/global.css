@@ -20,33 +20,29 @@
 }
 
 html {
-    scroll-padding-top: 20rem;
-    scroll-behavior: smooth;
     font-size: 62.5%;
-}
-
-html::-webkit-scrollbar {
-    display: none;
 }
 
 body {
     background: url(../resource/background.jpeg) no-repeat fixed center / cover;
-    color: var(--Negro);
     margin: 0 auto;
-
+    color: #2b2b2bec;
     padding-top: 5.6rem;
     height: 100vh;
     min-width: 100vw;
 }
 
 main {
+    overflow: hidden;
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: end;
-
     margin: auto;
     font-family: "Ubuntu", sans-serif;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 h1,h2{

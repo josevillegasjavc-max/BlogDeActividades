@@ -3,7 +3,7 @@ function crearPlantilla(titulo, actividad) {
     <article class="cardsActivity">
         <div>
             <h3 class="titleActivity" >${titulo}:</h3>
-            <button type="submit" class="buttonX">X</button>
+            <img src="./resource/basura-circular.png" alt="Icono de elimina actividad" class="buttonX">
         </div>
         <p class="description" >${actividad}</p>
     </article>
@@ -20,7 +20,6 @@ function mostrarInfo() {
     let tituloLimpio = inputTitle.value.trim();
     let descripcionLimpia = inputDescription.value.trim();
 
-
     if (tituloLimpio === "" || descripcionLimpia === "") {
         alert("Por favor, llena todos los campos");
         return;
@@ -31,3 +30,20 @@ function mostrarInfo() {
     inputTitle.value = "";
     inputDescription.value = "";
 }
+
+const contenedorDatos = document.getElementById("datos");
+
+const manejarClickEnContenedor = (event) => {
+    const elementoClickado = event.target;
+
+    if (elementoClickado.classList.contains("buttonX")) {
+        
+        const tarjeta = elementoClickado.closest(".cardsActivity");
+        
+        if (tarjeta) {
+            tarjeta.remove();
+        }
+    }
+};
+
+contenedorDatos.addEventListener("click", manejarClickEnContenedor);

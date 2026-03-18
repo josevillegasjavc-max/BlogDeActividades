@@ -1,14 +1,17 @@
 #containtActivity {
     border-left: 2.5px solid #969191;
     background: #e2e2e2;
+    
     height: 100%;
-
-    min-height: max-content;
-    width: 63.2rem;
+    width: 46.5%;
     margin: 0;
 
-    justify-content: center;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+    scrollbar-width: none;
 }
 
 #titleSection {
@@ -28,7 +31,6 @@
 #spantitle {
     letter-spacing: 0.3rem;
     font-size: 3rem;
-    cursor: pointer;
 
     background: 
     -webkit-repeating-linear-gradient(var(--Rojo), var(--Rojo3));
@@ -38,10 +40,8 @@
 }
 
 #spantitle:hover {
-    text-shadow: 0.2rem 0.4rem 0.8rem #d84e4ee3;
+    text-shadow: 0.2rem 0.4rem 0.8rem #d84e4e7c;
 }
-
-
 
 .cardsActivity {
     box-shadow: 0 0.1rem 1.5rem var(--Gris);
@@ -52,12 +52,21 @@
     margin: 2rem;
 }
 
+.cardsActivity div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;           
+    width: 100%;
+    gap: 5rem;
+}
+
 .titleActivity {
-    margin: 0;
-    margin-bottom: 0.7rem;
     display: inline;
     font-size: 2.3rem;
     text-decoration: underline;
+
+    margin: 0;
+    margin-bottom: 0.7rem; 
 
     background: 
     -webkit-repeating-linear-gradient(var(--Rojo2), var(--Rojo));
@@ -72,7 +81,6 @@
     white-space: pre-line;
     border: 4px solid var(--Rojo3);
     border-radius: 1.5rem;
-    color: #2b2b2bec;
     font-weight: bold;
     font-size: 1.9rem; 
     padding: 0.7rem;
@@ -81,39 +89,23 @@
     width: 90%;
     max-width: 60rem;
 
-    text-align: start;
     transition: all 0.2s ease-in-out;
 }
 
-.cardsActivity div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;           
-    width: 100%;
-    gap: 5rem;
-}
-
 .buttonX {
-    background: -webkit-repeating-linear-gradient( var(--Rojo), var(--Rojo2),  var(--Rojo));
-    box-shadow: 0rem 0.1rem 1.5rem #474747ad;
-    color: var(--Blanco2);
     border-radius: 40%;
-    font-size: 3rem;
-    padding: 0.4rem;
     cursor: pointer;
-    border: none;
     height: 3.8rem;
+    border: none;
     min-width: 4rem;
     transition: all 0.2s ease-out;
 }
 
 .buttonX:hover {
-    filter: saturate(1.4);
-    box-shadow: 0 0.1rem 1.5rem #2e2e2ead;
+    filter: saturate(1.3);
 }
 
 .buttonX:active {
-    background: -webkit-repeating-linear-gradient( var(--Rojo2), var(--Rojo),  var(--Rojo2));
     filter: saturate(1);
     scale: 0.7;
 }
