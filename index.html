@@ -8,32 +8,36 @@
     <link rel="Icon" href="/resource/logo.png" />
 </head>
 <body>
-    <header>
-            <a href="#inicio">
+    <header class="header">
+            <a class="containLogo">
                 <img src="./resource/logo.png" alt="logo" class="logo">
-                <h1>LISTA DE ACTIVIDADES</h1>
+                <h1 id="h1">Lista De Actividades</h1>
             </a>
     </header>
     <main>
-        <div class="divMain">
-            <form id="inicio" class="insertInfo">
-                <h2 class="titleForm"><a href="#title">INGRESAR INFORMACION</a></h2>
-                <label id="labelTi" for="title">Titulo</label>
-                <input class="input" id="inputTitle" placeholder="" type="text" required>
+        <form id="inicio" class="insertInfo">
+            <h2 class="titleForm"><a href="#inputTitle">INGRESAR INFORMACION</a></h2>
+            <label id="labelTi" for="inputTitle">Titulo</label>
+            <input class="input" id="inputTitle" placeholder="" type="text" required>
 
-                <label id="labelTe" for="inputDescription">Actividad</label>
-                <div class="containButton">
-                    <textarea name="inputDescription" id="inputDescription" class="input" required></textarea>
-                    <button type="submit" class="button" onclick="mostrarInfo(event)" title="Agregar">+</button>
+            <label id="labelTe" for="inputDescription">Actividad</label>
+            <div id="containButton">
+                <div id="containDescription" class="input">
+                    <textarea name="inputDescription" id="inputDescription" required></textarea>
                 </div>
+                <button type="submit" class="button" onclick="mostrarInfo(event)" title="Agregar">+</button>
+            </div>
             </form>
 
-            <section id="containtActivity"> 
-                <div id="containTitle"></div>
-                <div id="datos"> </div>
-            </section>
-            <script src="./script/main.js" type="text/javascript"></script>
-        </div>
+        <section id="containtActivity"> 
+            <div id="containTitle">
+                <h2 id="titleSection"> 
+                    <span id="spantitle">Actividades a Realizar</span> 
+                </h2>
+            </div>
+            <div id="datos"> </div>
+        </section>
+        <script src="./script/main.js" type="text/javascript"></script>
     </main>
 </body>
 </html>

@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
 
 :root {
     --Negro:     rgb(22, 22, 20);
@@ -12,11 +14,12 @@
 }
 
 * {
-    max-width: 100%;;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
-    zoom: 0.9;
     scroll-padding-top: 20rem;
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -29,23 +32,30 @@ html::-webkit-scrollbar {
 body {
     background: url(../resource/background.jpeg) no-repeat fixed center / cover;
     color: var(--Negro);
-    margin: 0;
+    margin: 0 auto;
+
+    padding-top: 5.6rem;
+    height: 100vh;
+    min-width: 100vw;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+    margin: auto;
+    font-family: "Ubuntu", sans-serif;
+}
+
+h1,h2{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 a {
     text-decoration: none;
-}
-
-main {
-    width: 100%;
-    font-family: "Ubuntu", sans-serif;
-}
-
-.divMain {
-    justify-content: end;
-    min-height: 90rem;
-    max-width: 156rem; 
-    display: flex;
-    margin: auto;
-    margin-top: 6.1rem;
 }
