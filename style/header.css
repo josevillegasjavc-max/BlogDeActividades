@@ -1,5 +1,5 @@
 .header { 
-    text-align: end;
+    text-align: start;
     position: fixed; 
     top: 0; 
     left: 0;  
@@ -11,6 +11,12 @@
     rgb(206, 203, 203) 90%);
     box-shadow: 0rem 0.1rem 1.5rem var(--Gris);
     border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.containLogo {
+    margin-left: 5%;
+    display: inline-flex;
+    transition: all 0.3s 0.1s ease-in-out;
 }
 
 #h1 { 
@@ -26,12 +32,6 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
     transition: all 0.3s ease-in-out;
-}
-
-.containLogo {
-    margin-right: 60%;
-    display: inline-flex;
-    transition: all 0.3s 0.1s ease-in-out;
 }
 
 .logo {
