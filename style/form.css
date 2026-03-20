@@ -6,7 +6,7 @@
     padding-bottom: 2.5rem;
 
     height: fit-content;
-    width: 100%;            
+    width: 90%;            
     max-width: 60rem;       
     margin: 4rem auto;
 }
@@ -48,7 +48,8 @@ label {
     background: var(--Blanco2);
     border-radius: 1.5rem;
     font-weight: bold;
-
+    width: 100%;
+    
     z-index: 1;
 }
 

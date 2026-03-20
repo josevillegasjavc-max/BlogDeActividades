@@ -32,10 +32,8 @@ const manejarClickEnContenedor = (event) => {
 
         } else {
             title.textContent = title.textContent.trim(); 
-            /*  
-                descripcion.textContent = descripcion.textContent.trim();
-            */
-            
+            /* descripcion.textContent = descripcion.textContent.trim(); */
+
             title.insertAdjacentHTML('beforeend','<span class="twoPoints">:</span>');
 
             elementoClickado.src = "./resource/lapiz.png";
