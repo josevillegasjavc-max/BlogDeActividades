@@ -31,9 +31,9 @@ const manejarClickEnContenedor = (event) => {
             removePoint.remove();
 
         } else {
+            title.textContent = title.textContent.trim(); 
             /*  
                 descripcion.textContent = descripcion.textContent.trim();
-                title.textContent = title.textContent.trim(); 
             */
             
             title.insertAdjacentHTML('beforeend','<span class="twoPoints">:</span>');
