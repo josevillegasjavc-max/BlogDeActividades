@@ -1,46 +1,58 @@
+function removeAnimation(elementoBorrado) {
+elementoBorrado.classList.add("fade-out");
+    setTimeout(() => {
+        elementoBorrado.remove();
+    }, 300); 
+};
+
+function editMode(edit, btno, title, desc) {
+    title.contentEditable = edit;
+    desc.contentEditable = edit;
+
+    btno.src = edit ? "./resource/disco.png" : "./resource/lapiz.png";
+    btno.title = edit ? "Guardar" : "Editar";
+
+    title.classList.toggle("edit", edit);
+    desc.classList.toggle("edit", edit);
+};
+
 const contenedorDatos = document.getElementById("datos");
 
 const manejarClickEnContenedor = (event) => {
     const elementoClickado = event.target;
-
     const tarjeta = elementoClickado.closest(".cardsActivity");
 
+    if (!tarjeta) return;
     if (elementoClickado.classList.contains("buttonX")) {   
         if (tarjeta) {
-            tarjeta.remove();
+            removeAnimation(tarjeta);
         }
     }
 
     if (elementoClickado.classList.contains("buttonE")) {
-
         const title = tarjeta.querySelector(".titleActivity");
         const descripcion = tarjeta.querySelector(".description");
-        
-        descripcion.classList.toggle("edit");
-        title.classList.toggle("edit");
+        const isCurrentlyEditing = descripcion.contentEditable === "true";
 
-        if (descripcion.contentEditable !== "true") {
-
-            title.contentEditable = "true";
-            descripcion.contentEditable = "true";
+        if (!isCurrentlyEditing) {
+            editMode(true, elementoClickado, title, descripcion)
             descripcion.focus();  
 
-            elementoClickado.src = "./resource/disco.png";
-            elementoClickado.title = "Guardar";
             const removePoint = title.querySelector(".twoPoints")
             removePoint.remove();
+        } 
 
-        } else {
-            title.textContent = title.textContent.trim(); 
-            /* descripcion.textContent = descripcion.textContent.trim(); */
+        else {
+            const textoLimpio = title.textContent.trim();
+            if (textoLimpio === "") {
+                removeAnimation(tarjeta);
+                return;
+            } else if (descripcion.textContent === "") {
+                descripcion.innerHTML = `La Actividad No Tiene Descripcion`;
+            }
 
-            title.insertAdjacentHTML('beforeend','<span class="twoPoints">:</span>');
-
-            elementoClickado.src = "./resource/lapiz.png";
-            elementoClickado.title = "Editar";
-
-            descripcion.contentEditable = "false";
-            title.contentEditable = "false";
+            title.innerHTML = `<span class="spanTitle">${textoLimpio}</span><span class="twoPoints">:</span>`;
+            editMode(false, elementoClickado, title, descripcion);
         }
     }
 };

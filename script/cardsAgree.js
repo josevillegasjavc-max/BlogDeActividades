@@ -3,7 +3,7 @@ function crearPlantilla(titulo, actividad) {
     <article class="cardsActivity">
         <div class="infoContainer">
             <h3 class="titleActivity">
-                ${titulo}<span class="twoPoints">:</span>
+                <span class="spanTitle">${titulo}</span><span class="twoPoints">:</span>
             </h3>
             <p class="description" >${actividad}</p>
         </div>

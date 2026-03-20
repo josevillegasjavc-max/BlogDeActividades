@@ -75,14 +75,15 @@ label {
     align-items: flex-end;
     padding: 0;
     margin: 0;
-    gap: 2rem;
+    gap: 1.8rem;
 }
 
 #containDescription {
     padding: 0.4rem;
     min-height: 10rem; 
     max-height: 16rem;
-    width: 86%;
+    width: 88%;
+    max-width: 47.2rem;
     cursor: text;
     transition: all 0.2s ease-in-out;
 }
@@ -121,6 +122,7 @@ label {
 }
 
 .button {
+    display: flex;
     background: -webkit-repeating-linear-gradient( var(--Rojo), var(--Naranja),  var(--Rojo));
     box-shadow: 0rem 0.1rem 1.5rem #474747ad;
     color: var(--Blanco2);
