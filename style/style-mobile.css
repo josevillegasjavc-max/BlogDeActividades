@@ -12,7 +12,14 @@
         padding-top: 0.3rem;
     }
 
+    body {
+        background: url(../resource/background.jpeg) no-repeat scroll center / cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+
     main {
+        overflow-y: auto;
         display: inline;
     }
 
