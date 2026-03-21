@@ -1,12 +1,11 @@
 #containtActivity {
     background: transparent;
-    
     height: 100%;
     width: 49.5%;
     margin: 0;
 
     text-align: center;
-
+    align-items: center;
     display: flex;
     flex-direction: column;
     overflow-y: auto; 
@@ -39,6 +38,11 @@
     text-shadow: 0.2rem 0.4rem 0.8rem #d84e4e7c;
 }
 
+#datos {
+    width: 98%;
+    max-width: 64rem;
+}
+
 .cardsActivity {
     display: flex;
     box-shadow: 0 0.1rem 1.5rem var(--Gris);
@@ -46,16 +50,17 @@
     border-radius: 3rem;
     text-align: start;
     padding: 1.5rem;
-    margin: 2rem;
+    margin: 2.2rem auto;
+    gap: 0.4rem;
+    width: 95%;
 }
 
 .infoContainer {
-    border: 2px solid rgba(0, 0, 0, 0);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     gap: 0.4rem;
-    max-width: 56.2rem;
+    max-width: 54rem;
 }
 
 .titleActivity {
@@ -67,7 +72,7 @@
     padding: 0 0.7rem;
     margin-bottom: 0.7rem; 
 
-    width: 90%;
+    width: 98%;
     max-width: 60rem;
 
     background: 
@@ -116,7 +121,6 @@
 }
 
 .containButtons {
-    border: 2px solid rgba(0, 0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

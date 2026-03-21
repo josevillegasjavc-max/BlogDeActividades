@@ -3,9 +3,8 @@
 
 
 :root {
-    --Negro:     rgb(22, 22, 20);
-    --Blanco:    #f8f8f8;
     --Blanco2:   #f3f3f3;
+    --letter:    #2b2b2bec;
     --Gris:      #292626;
     --Naranja:   #ec7717;
     --Rojo:      #d33c28e5;
@@ -25,7 +24,6 @@ html {
 
 body {
     margin: 0 auto;
-    color: #2b2b2bec;
     padding-top: 5.6rem;
     height: 100vh;
     min-width: 100vw;
@@ -54,5 +52,8 @@ h1,h2{
 
 a {
     text-decoration: none;
-    margin-bottom: 0rem;
+}
+
+.color {
+    color: var(--letter);
 }
