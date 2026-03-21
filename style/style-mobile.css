@@ -15,11 +15,9 @@
     body {
     background-image: url('../resource/background.jpeg');
     background-repeat: no-repeat;
-    background-position: top;
     
     background-size: cover;       
-    background-attachment: scroll; 
-    height: 100dvh;
+    background-attachment: fixed; 
     }   
 
     main {
