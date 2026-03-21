@@ -19,8 +19,8 @@
     background-position: top;
     
     background-size: cover;       
-    background-attachment:scroll; 
-
+    background-attachment: scroll; 
+    height: max-content;
     }   
 
     main {
