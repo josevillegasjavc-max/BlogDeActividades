@@ -13,11 +13,18 @@
     }
 
     body {
-        background-image: url('../resource/background.jpeg');
-        background-attachment:local;
-        background-size:contain;
-        background-position: center;
-        height: 100dvh;
+        /* Unificamos todo para evitar errores */
+    background-image: url('../resource/background.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* ESTO ARREGLA EL FONDO EN MÓVIL */
+    background-size: cover;       /* La imagen se ajusta al ancho/alto sin deformarse */
+    background-attachment: fixed; /* El fondo se queda quieto al deslizar */
+
+    /* ESTO ARREGLA EL SCROLL (DESLIZAR) */
+    min-height: 100dvh;           /* Altura mínima de la pantalla */
+    height: auto;
     }   
 
     main {
