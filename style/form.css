@@ -133,6 +133,16 @@ label {
     height: 4.3rem;
     min-width: 4.5rem;
     transition: all 0.2s ease-out;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button img{
+    width: 3.9rem;
+    height: 3.6rem;
+    margin: 0 auto;
 }
 
 .button:hover {
