@@ -14,7 +14,7 @@
 
     body {
         background-image: url('../resource/background.jpeg');
-        background-attachment: fixed; /* Esto evita que el fondo se mueva al scrollear */
+        background-attachment:local;
         background-size:contain;
         background-position: center;
         height: 100dvh;
