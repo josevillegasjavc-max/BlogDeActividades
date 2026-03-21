@@ -13,7 +13,7 @@
     }
 
     body {
-    background: -webkit-repeating-linear-gradient( var(--Rojo), var(--Naranja),  var(--Rojo));
+        background: -webkit-repeating-linear-gradient( var(--Rojo), var(--Naranja),  var(--Rojo));
     }   
 
     main {
