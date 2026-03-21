@@ -13,10 +13,12 @@
     }
 
     body {
-        background: url(../resource/background.jpeg) no-repeat scroll center / cover;
+        background-image: url('../resource/background.jpeg');
+        background-attachment: fixed; /* Esto evita que el fondo se mueva al scrollear */
+        background-size: cover;
         background-position: center;
-        min-height: 100vh;
-    }
+        height: 100dvh;
+    }   
 
     main {
         overflow-y: auto;
@@ -61,12 +63,14 @@
     }
 
     #containtActivity {
-        border: none;
-        overflow: hidden;
+        min-height: 100dvh;
+        height: auto;
+        border-left: none;
+        overflow: auto;
         background: transparent;        
-        height: 100%;
         width: 100%;
         margin: 0 auto;
+
     }
 
     #titleSection {
