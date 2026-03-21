@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    background: -webkit-repeating-linear-gradient( var(--Rojo), var(--Naranja),  var(--Rojo));
+    background:-webkit-repeating-linear-gradient( var(--Rojo), var(--Naranja),  var(--Rojo));
     margin: 0 auto;
     color: #2b2b2bec;
     padding-top: 5.6rem;
