@@ -13,14 +13,13 @@
     }
 
     body {
-        /* Unificamos todo para evitar errores */
     background-image: url('../resource/background.jpeg');
     background-repeat: no-repeat;
     background-position: top;
     
     background-size: cover;       
     background-attachment: scroll; 
-    height: max-content;
+    height: 100dvh;
     }   
 
     main {
