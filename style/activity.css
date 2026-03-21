@@ -1,6 +1,5 @@
 #containtActivity {
-    border-left: 2.5px solid #969191;
-    background: #e2e2e2;
+    background: transparent;
     
     height: 100%;
     width: 49.5%;
@@ -44,7 +43,7 @@
     display: flex;
     box-shadow: 0 0.1rem 1.5rem var(--Gris);
     background: var(--Blanco2);
-    border-radius: 3.5rem;
+    border-radius: 3rem;
     text-align: start;
     padding: 1.5rem;
     margin: 2rem;
