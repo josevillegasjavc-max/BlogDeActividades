@@ -13,8 +13,7 @@
     }
 
     main {
-        overflow:auto;
-        flex-direction: column;
+        display: inline;
     }
 
     .titleForm {
