@@ -11,11 +11,7 @@
         font-size: 3.2rem;
         padding-top: 0.3rem;
     }
-
-    body {
-        background: -webkit-repeating-linear-gradient( var(--Rojo), var(--Naranja),  var(--Rojo));
-    }   
-
+    
     main {
         overflow-y: auto;
         display: inline;
