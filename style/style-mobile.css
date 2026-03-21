@@ -13,11 +13,7 @@
     }
 
     body {
-    background-image: url('../resource/background.jpeg');
-    background-repeat: no-repeat;
-    
-    background-size: cover;       
-    background-attachment: fixed; 
+    background: -webkit-repeating-linear-gradient( var(--Rojo), var(--Naranja),  var(--Rojo));
     }   
 
     main {
