@@ -1,17 +1,19 @@
 function crearPlantilla(titulo, actividad) {
     return `
     <article class="cardsActivity">
-        <div class="infoContainer">
-            <h3 class="titleActivity">
-                <span class="spanTitle">${titulo}</span><span class="twoPoints">:</span>
-            </h3>
-            <p class="description" >${actividad}</p>
-        </div>
+        <div class="centerActivity">
+            <div class="infoContainer">
+                <h3 class="titleActivity">
+                    <span class="spanTitle">${titulo}</span><span class="twoPoints">:</span>
+                </h3>
+                <p class="description" >${actividad}</p>
+            </div>
 
-        <div class="containButtons">
-            <img src="./resource/basura.png" alt="Icono de elimina actividad" class="buttons buttonX" title="Eliminar">
-            <img src="./resource/lapiz.png" alt="Icono de editar actividad" class="buttons buttonE" title="Editar">
-        </div>
+            <div class="containButtons">
+                <img draggable="false" src="./resource/basura.png" alt="Icono de elimina actividad" class="buttons buttonX" title="Eliminar">
+                <img draggable="false" src="./resource/lapiz.png" alt="Icono de editar actividad" class="buttons buttonE" title="Editar">
+            </div>
+        <div>
     </article>
     `;
 }

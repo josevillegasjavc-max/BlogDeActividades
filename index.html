@@ -6,11 +6,12 @@
     <title>Lista De Actividades</title>
     <link rel="stylesheet" href="./style/main.css">
     <link rel="icon" href="./resource/logo.png">
+    <script type="module" src="./script/main.js" ></script>
 </head>
 <body class="color">
     <header class="header">
             <a class="containLogo">
-                <img src="./resource/logo.png" alt="logo" class="logo">
+                <img draggable="false" src="./resource/logo.png" alt="logo" class="logo">
                 <h1 id="h1">Lista De Actividades</h1>
             </a>
     </header>
@@ -26,7 +27,7 @@
                     <textarea name="inputDescription" id="inputDescription" class="color" required></textarea>
                 </div>
                 <div id="btn">
-                    <button type="submit" class="button" title="Agregar"><img src="./resource/agregar-documento.png" alt="agregar-documento"></button>
+                    <button type="submit" class="button" title="Agregar"><img draggable="false" src="./resource/agregar-documento.png" alt="agregar-documento"></button>
                 </div>
             </div>
         </form>
@@ -38,7 +39,6 @@
             </div>
             <div id="datos"> </div>
         </section>
-        <script type="module" src="./script/main.js" ></script>
     </main>
 </body>
 </html>

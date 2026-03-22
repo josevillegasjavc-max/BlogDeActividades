@@ -44,14 +44,12 @@
 }
 
 .cardsActivity {
-    display: flex;
     box-shadow: 0 0.1rem 1.5rem var(--Gris);
     background: var(--Blanco2);
     border-radius: 3rem;
     text-align: start;
     padding: 1.5rem;
     margin: 2.2rem auto;
-    gap: 0.4rem;
     width: 95%;
 }
 
@@ -60,7 +58,7 @@
     flex-direction: column;
     flex-grow: 1;
     gap: 0.4rem;
-    max-width: 54rem;
+    max-width: 90%;
 }
 
 .titleActivity {
@@ -104,7 +102,7 @@
 .description.edit {
     border: 3.5px dashed var(--Naranja);
     padding: 10px;
-
+    
     transition: all 0.2s ease-in-out;
 }
 
@@ -125,8 +123,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0.4rem 0rem;
-    min-width: 4rem;
+    margin: 0;
+    min-width: 9%;
 }
 
 .buttons {
@@ -151,4 +149,11 @@
     transform: scale(0.9);
     transition: all 0.3s ease; /* Dura 0.3 segundos */
     pointer-events: none;      /* Evita que el usuario haga clic mientras desaparece */
+}
+
+.centerActivity {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
 }
