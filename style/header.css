@@ -7,7 +7,7 @@
     z-index: 10;
 
     background: linear-gradient(180deg,
-    rgb(255, 255, 255) 10%,
+    rgba(255, 255, 255, 0.863) 10%,
     rgb(206, 203, 203) 90%);
     box-shadow: 0rem 0.1rem 1.5rem var(--Gris);
     border-radius: 0rem 0rem 1rem 1rem;

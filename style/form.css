@@ -45,13 +45,12 @@ label {
     display: flex;
     flex-direction: column;    
 
-    box-shadow: 0 0.1rem 1.5rem #a7a6a6ad;
+    box-shadow: 0 0.1rem 1.5rem #a7a6a670;
     border: 4px solid var(--Naranja);
     background: var(--Blanco2);
     border-radius: 1.5rem;
     font-weight: bold;
     width: 100%;
-    
     z-index: 1;
 }
 
