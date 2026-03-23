@@ -2,7 +2,7 @@ function removeAnimation(elementoBorrado) {
 elementoBorrado.classList.add("fade-out");
     setTimeout(() => {
         elementoBorrado.remove();
-    }, 300); 
+    }, 400); 
 };
 
 function editMode(edit, btno, title, desc) {
@@ -23,6 +23,7 @@ const manejarClickEnContenedor = (event) => {
     const tarjeta = elementoClickado.closest(".cardsActivity");
 
     if (!tarjeta) return;
+
     if (elementoClickado.classList.contains("buttonX")) {   
         if (tarjeta) {
             removeAnimation(tarjeta);

@@ -21,6 +21,8 @@
     min-width: 50rem;
     margin: 1.7rem 0rem 1.2rem 0rem;
     padding: 0.2rem;
+
+    animation: aparicion 1.2s ease-in-out forwards;
 }
 
 #spantitle {
@@ -51,6 +53,15 @@
     padding: 1.5rem;
     margin: 2.2rem auto;
     width: 95%;
+
+    animation: aparicion 0.4s ease-in-out forwards;
+}
+
+.centerActivity {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
 }
 
 .infoContainer {
@@ -125,6 +136,8 @@
     align-items: center;
     margin: 0;
     min-width: 9%;
+
+    animation: aparicion 1s ease-in-out forwards;
 }
 
 .buttons {
@@ -144,16 +157,29 @@
     scale: 0.8;
 }
 
-.fade-out {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: all 0.3s ease; /* Dura 0.3 segundos */
-    pointer-events: none;      /* Evita que el usuario haga clic mientras desaparece */
+@keyframes desaparicion {
+    from {
+        opacity: 1; 
+        transform: scale(1);
+        max-height: 500px;
+
+        margin-bottom: 15px; 
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    to {
+        opacity: 0; 
+        transform: scale(0.1);
+        max-height: 0;
+
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
-.centerActivity {
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
+.fade-out {
+    animation: desaparicion 0.4s ease-in-out forwards;
+    overflow: hidden;
 }

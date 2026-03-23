@@ -9,6 +9,8 @@
     width: 90%;            
     max-width: 60rem;       
     margin: 4rem auto;
+
+    animation: aparicion 1.2s ease-in-out forwards;
 }
 
 .titleForm {
@@ -135,6 +137,8 @@ label {
     text-align: center;
     justify-content: center;
     align-items: center;
+
+    animation: aparicion 1.4s ease-in-out forwards;
 }
 
 .button img{
